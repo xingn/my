@@ -10,9 +10,10 @@ import com.tedu.sp01.service.ItemService;
 
 import lombok.extern.slf4j.Slf4j;
 
-@Service
 @Slf4j
-public class ItemServiceImpl implements ItemService{
+@Service
+public class ItemServiceImpl implements ItemService {
+
 	@Override
 	public List<Item> getItems(String orderId) {
 		ArrayList<Item> list = new ArrayList<Item>();
@@ -32,5 +33,4 @@ public class ItemServiceImpl implements ItemService{
 			}
 		}
 	}
-	
 }
